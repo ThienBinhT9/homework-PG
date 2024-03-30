@@ -1,0 +1,84 @@
+.wrapper-loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.loading__icon{
+    font-size: 30px;
+    animation: rotate ease 1s infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper-loadingblurred{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+    padding: 12px;
+    gap: 12px;
+
+    .loadingblurred__avatar{
+        width: 60px;
+        height: 60px;
+        background: #eaeaea;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .loadingblurred__info{
+        flex: 1;
+
+        .loadingblurred__name{
+            background: #eaeaea;
+            height: 25px;
+            width: 100%;
+            margin-bottom: 4px;
+            overflow: hidden;
+        }
+
+        .loadingblurred__desc{
+            background: #eaeaea;
+            height: 17px;
+            width: 50%;
+            overflow: hidden;
+        }
+    }
+
+    .loadingblurred__run{
+        background: linear-gradient(to right, #dadada, #cccccc);
+        height: 100%;
+        width: 40%;
+        display: inline-block;
+        box-shadow: 0 0 10px #ccc;
+        animation: run ease-in-out 0.8s infinite;
+    }
+}
+
+@keyframes run {
+    from{
+        margin-left: 0;
+    }to{
+        margin-left: 100%;
+    }
+}

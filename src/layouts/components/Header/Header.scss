@@ -1,0 +1,47 @@
+.wrapper-header{
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 0 3px;
+}
+
+.inner-header{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.inner-header-right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+
+    .inner-header-name{
+        font-weight: 500;
+    }
+
+    .inner-header-avatar{
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+}
+
+.wrapper-tippy-content{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 4px gray;
+
+    .nav-btn{
+        padding: 6px 12px;
+        background-color: white;
+        border-radius: unset;
+        transition: 0.5s;
+        display: block;
+
+        &:hover{
+            background-color: #f1f1f1;
+        }
+    }
+}
